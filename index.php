@@ -80,12 +80,17 @@
 				<div class="col-sm-6 pull-right wow fadeInRightBig">
 					<img class="img-responsive " src="img/moto2.png" alt="">
 				</div>
-				<div style='display:none;' >
+				<?php
+				if(true) {
+				?>
+				<div style='' >
 					<a style='color:red;font-size:20px;' >
-					Unfortunately, I am involved in other things till 27th November 2015. So, if you need you can book me for a project right now, and I will begin working on it after 27th November. Sorry for the incovenience.</a>
-					<div align=right style='font-size:12px;' > Updated on July 7, 2015</div>
+					Unfortunately, I am involved in other things till 11th May, 2016. So, if you need you can book me for a project right now, and I will begin working on it after 11th May. Sorry for the incovenience.</a>
+					<div align=right style='font-size:12px;' > Updated on January 14, 2016</div>
 				</div>
-				
+				<?php
+				}
+				?>
 				<div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
 					<h3 class="section-heading">Crazy Coder</h3>
 					<div class="sub-title lead3">:)</div>
