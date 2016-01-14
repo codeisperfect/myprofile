@@ -250,8 +250,6 @@
 								I have also created a code which when sent to someone and asked to run it on his machine, their Facebook account would be hacked! Although it may seem a little nasty, I have never misused it any way I swear!						</li>
 						<li><b><a target='_blank'  >Way2sms hacks</a> : </b>It is python code, using which we can send mobile sms using way2sms account. So using this we can send automatically generated message.</li>
 						<li><b><a target='_blank'  >Gmail hacks</a> : </b>It is python code. Gmail doesn;t allow us to keep a passwrd already kept before but using this, we can do it!.</li>
-						<li><b><a target='_blank'  >WebWithMohit</a> : </b>It is m'y own framework for Web-Development.It is made in PHP and JS. I always make websites using this basic framework.<br>
-						Using this we can also export our website as static html coded website. This website itself is also exported using my framework.</li>
 						<li><b><a >Simple Risc assembly graphical simulater</a> : </b>It is a cool graphical simulater for simple risc assembly code.</li>
 					</ul>
 				</div>
