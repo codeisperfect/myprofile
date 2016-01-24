@@ -81,7 +81,7 @@
 					<img class="img-responsive " src="img/moto2.png" alt="">
 				</div>
 				<?php
-				if(true) {
+				if(false) {
 				?>
 				<div style='' >
 					<a style='color:red;font-size:20px;' >
@@ -199,6 +199,9 @@
 
 				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
 					<h3 class="section-heading">My Portfolio</h3>
+					<?php
+						if(false) {
+					?>
 					<div style='display:none' >
 						<p class="lead"><b>kurrybox.in</b>: It's a portal for food startup, where you can order food, listed by local chefs in your area. & get the food next to your door within 20 minutes. I am proud to say that i myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
 						<br>
@@ -211,6 +214,11 @@
 						</p>
 
 					</div>
+					<?php
+						}
+					?>
+							
+
 
 						<p class="lead"><b>getiitians.com</b>: It's a portal for online or offline teaching, where you can search for the teacher who can teach you a subject of your choice within your desired price, listed by IITians teachers anywhere in universe(for online teaching) or offline teachers(in your local area). & book an appointment & get the quality education. I made it's backend from scratch including it's feature structuring, hosting, leading the team of designers, everything till launching. currently it's being run by some other developers.
 						<br>
