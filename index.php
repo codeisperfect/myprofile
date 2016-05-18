@@ -92,10 +92,9 @@
 				}
 				?>
 				<div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">Crazy Coder</h3>
-					<div class="sub-title lead3">:)</div>
-					<p class="lead">Hey,<br>I am Mohit Saini and I am currently studying B.tech in Computer Science & Engineering at IIT Delhi(4th year). I am also working as freelancer since the past three years.<br>
-					It's also true that Only time when i am not coding is, when I am sleeping.
+					<h3 class="section-heading">A Crazy Coder</h3>
+					<p class="lead">Hey,<br>I am Mohit Saini and I just passed out from IITD(2016) after finishing B.tech in Computer Science & Engineering. Now I am working as full time freelancer. I was also working as freelancer since the past three years.<br>
+					Only time when i am not coding is, when I am sleeping :D
 					</p>
 				</div>
 			</div>
@@ -160,7 +159,7 @@
 					<ul class="descp lead2">
 						<li><b>PHP,Javascript,JQuery,MySQL : </b> Very good and fluent in php, javascript, JQuery, MySQL. I make websites using php backend.</li>
 						<li><b>CSS,HTML : </b> I am not a very stud designer but somehow i manage to make it good looking using materialize css.</li>
-						<li><b>Python,C++,Java : </b> I am very adept at coding in in Python, C++, Java. My favourite out of them is Python because of its sheer simplicity and ease. Once, I even made 4-5 hacks for facebook, gmail, way2sms in Python!</li>
+						<li><b>Python,C++,Java : </b> I am very adept at coding in in Python, C++, Java. My favourite out of them is Python because of its sheer simplicity and ease. </li>
 						<li><b>Tech. support : </b> I manage websites hosted on linux server and update them time to time. I prefer a Linux envionment for its usability and programmer-friendly interface.</li>
 						<li><b>JOGAD : </b> I love to make jogads wherever I get a chance!</li>
 					</ul>
@@ -178,13 +177,13 @@
 				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200"> 
 					<h3 class="section-heading">What I can do</h3>
 					<ul class="descp lead2">
-						<li><b>Web developer : </b> I'm a good web developer and love to learn any new tool associated with it too.</li>
+						<li><b>Web developer : </b> I'm a good developer and love to learn any new tool associated with it too.</li>
 						<li><b>Automated script writer : </b> I like to multi-task a lot of things, and so I often I find myself running out of time for other minor things. Hence, I make a script for every such minor task! It saves a lot of time and I am very passionate about it.</li>
 						<li><b>Web crawler : </b> It is one of my super great interests. I have crawled many websites for various purposes (almost everytime purpose was fun).
 							My past experience inculdes and intern at proptiger.com, where I crawled the complete website commonfloor.com.
 						</li>
-						<li><b>Tester : </b> I have done a lot of work on python-selenium for website testing. </li>
-						<li><b>Private tutor: </b> I can teach coding (in any language/tool/software I mentioned above) and also hacking JOGADs. [Warning: No experience at all]</li>
+						<li><b>Tester : </b> I have done a lot of work on python-selenium for website testing & automation scripts. </li>
+						<li><b>Private tutor: </b> I can teach coding (in any language/tool/software I mentioned above) and also hacking JOGADs. [Warning: No experience in teaching]</li>
 					</ul>
 				</div>
 
@@ -200,18 +199,32 @@
 				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
 					<h3 class="section-heading">My Portfolio</h3>
 					<?php
-						if(false) {
+						if(true) {
 					?>
-					<div style='display:none' >
+					<div style='' >
 						<p class="lead"><b>kurrybox.in</b>: It's a portal for food startup, where you can order food, listed by local chefs in your area. & get the food next to your door within 20 minutes. I am proud to say that i myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
 						<br>
-						<!-- <span style='font-size:12px;' >Contact <b>harshaccent@gmail.com</b> for reviews.</span> -->
 						</p>
-
 						<p class="lead"><b>classpundit.com</b>: It's a portal for classes for children, like music classes, dance classes etc. they can search for classes on map. I myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
 						<br>
-						<!-- <span style='font-size:12px;' >Contact <b>azkrishnan@gmail.com</b> for reviews.</span> -->
 						</p>
+
+						<p class="lead"><b>messmart.com</b>: It's a portal for students in kota to bool their mess smartly. They can choose a mess, order meal. This startup is going to launch very soon.
+						<br>
+						</p>
+
+						<p class="lead"><a href="http://eduguidefoundation.com/" ><b>eduguidefoundation.com</b></a>: It's a profile website for a free school in rural area. I'm technical adviser and school's model designer there.
+						<br>
+						</p>
+
+						<p class="lead"><a href="http://letsworkforindia.org" ><b>letsworkforindia.org</b></a>: It's forum, which is going to launch very soon. where people can discuss issues in our country & give solution. We are planning to create a team, which will be working on solutions, suggested by people.
+						<br>
+						</p>
+
+						<p class="lead"><a href="http://stillhungry.in/cs/" ><b>CS2012 Yearbook</b></a>: It was a portal, where people (from our batch) can write testimonials for each other, create polls, vote for people, Generate Yearbook PDF etc. I have closed it now.
+						<br>
+						</p>
+
 
 					</div>
 					<?php
@@ -220,9 +233,8 @@
 							
 
 
-						<p class="lead"><b>getiitians.com</b>: It's a portal for online or offline teaching, where you can search for the teacher who can teach you a subject of your choice within your desired price, listed by IITians teachers anywhere in universe(for online teaching) or offline teachers(in your local area). & book an appointment & get the quality education. I made it's backend from scratch including it's feature structuring, hosting, leading the team of designers, everything till launching. currently it's being run by some other developers.
+						<p class="lead"><b>getiitians.com</b>: It's a portal for online or offline teaching, where you can search for the teacher who can teach you a subject of your choice within your desired price, listed by IITians teachers anywhere in universe(for online teaching) or offline teachers(in your local area). & book an appointment & get the quality education. I made it's backend from scratch including it's feature structuring, hosting, leading the team of designers, everything till launching. currently it's being run by some other developers. So it's changed into different theme.
 						<br>
-						<!-- <span style='font-size:12px;' >Contact <b>himanshu@getiitians.com</b> for reviews.</span> -->
 						</p>
 
 					<p class="lead"><b>mslib</b>: It's my framework. I made it (actually i never made it, It's going on) using python, ocamllex, ocamlyacc. I spent my 3 years in it & expecting to spend whole life in it. 
