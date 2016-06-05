@@ -202,26 +202,26 @@
 						if(true) {
 					?>
 					<div style='' >
-						<p class="lead"><b>kurrybox.in</b>: It's a portal for food startup, where you can order food, listed by local chefs in your area. & get the food next to your door within 20 minutes. I am proud to say that i myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
+						<p class="lead" style='display:none;' ><b>kurrybox.in</b>: It's a portal for food startup, where you can order food, listed by local chefs in your area. & get the food next to your door within 20 minutes. I am proud to say that i myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
 						<br>
 						</p>
-						<p class="lead"><b>classpundit.com</b>: It's a portal for classes for children, like music classes, dance classes etc. they can search for classes on map. I myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
-						<br>
-						</p>
-
-						<p class="lead"><b>messmart.com</b>: It's a portal for students in kota to bool their mess smartly. They can choose a mess, order meal. This startup is going to launch very soon.
+						<p class="lead"><b><a href="http://classpundit.com" target="_blank" >classpundit.com</a></b>: It's a portal for classes for children, like music classes, dance classes etc. they can search for classes on map. I myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
 						<br>
 						</p>
 
-						<p class="lead"><a href="http://eduguidefoundation.com/" ><b>eduguidefoundation.com</b></a>: It's a profile website for a free school in rural area. I'm technical adviser and school's model designer there.
+						<p class="lead"><b><a href="http://messmart.com" target="_blank" >messmart.com</a></b>: It's a portal for students in kota to book their mess smartly. They can choose a mess, order meal. This startup is going to launch very soon.
 						<br>
 						</p>
 
-						<p class="lead"><a href="http://letsworkforindia.org" ><b>letsworkforindia.org</b></a>: It's forum, which is going to launch very soon. where people can discuss issues in our country & give solution. We are planning to create a team, which will be working on solutions, suggested by people.
+						<p class="lead"><a href="http://eduguidefoundation.com/" target="_blank" ><b>eduguidefoundation.com</b></a>: It's a profile website for a free school in rural area. I'm technical adviser and school's model designer there.
 						<br>
 						</p>
 
-						<p class="lead"><a href="http://stillhungry.in/cs/" ><b>CS2012 Yearbook</b></a>: It was a portal, where people (from our batch) can write testimonials for each other, create polls, vote for people, Generate Yearbook PDF etc. I have closed it now.
+						<p class="lead"><a href="http://letsworkforindia.org" target="_blank" ><b>letsworkforindia.org</b></a>: It's forum, which is going to launch very soon. where people can discuss issues in our country & give solution. We are planning to create a team, which will be working on solutions, suggested by people.
+						<br>
+						</p>
+
+						<p class="lead"><a href="http://stillhungry.in/cs/" target="_blank" ><b>CS2012 Yearbook</b></a>: It was a portal, where people (from our batch) can write testimonials for each other, create polls, vote for people, Generate Yearbook PDF etc. I have closed it now.
 						<br>
 						</p>
 
