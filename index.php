@@ -8,8 +8,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="Mohit Saini">
 	<title>Freelance Web developer in IIT Delhi,PHP,MySQL,JavaScript,Jquery developer,Game & WebApp developer,Automated python script writer,web crawler</title>
-	<meta name="keywords" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jogads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
-	<meta name="description" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jogads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
+	<meta name="keywords" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jugads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
+	<meta name="description" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jugads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
 
 
 	<!-- Bootstrap core CSS -->
@@ -61,7 +61,7 @@
 					<li class="menuItem"><a href="#screen">About me</a></li>
 					<li class="menuItem"><a href="#port">Portfolio</a></li>
 					<li class="menuItem"><a href="#projects">My Projects</a></li>
-					<li class="menuItem"><a href="#jogads">My JOGADs</a></li>
+					<li class="menuItem"><a href="#jogads">My JUGADs</a></li>
 					<li class="menuItem"><a href="#achiev">Achievement</a></li>
 					<li class="menuItem"><a href="#contact">Contact</a></li>
 					<li class="menuItem"><a href="#hiring">Hiring</a></li>
@@ -161,7 +161,7 @@
 						<li><b>CSS,HTML : </b> I am not a very stud designer but somehow i manage to make it good looking using materialize css.</li>
 						<li><b>Python,C++,Java : </b> I am very adept at coding in in Python, C++, Java. My favourite out of them is Python because of its sheer simplicity and ease. </li>
 						<li><b>Tech. support : </b> I manage websites hosted on linux server and update them time to time. I prefer a Linux envionment for its usability and programmer-friendly interface.</li>
-						<li><b>JOGAD : </b> I love to make jogads wherever I get a chance!</li>
+						<li><b>JUGAD : </b> I love to make jugads wherever I get a chance!</li>
 					</ul>
 				</div>
 
@@ -183,7 +183,7 @@
 							My past experience inculdes and intern at proptiger.com, where I crawled the complete website commonfloor.com.
 						</li>
 						<li><b>Tester : </b> I have done a lot of work on python-selenium for website testing & automation scripts. </li>
-						<li><b>Private tutor: </b> I can teach coding (in any language/tool/software I mentioned above) and also hacking JOGADs. [Warning: No experience in teaching]</li>
+						<li><b>Private tutor: </b> I can teach coding (in any language/tool/software I mentioned above) and also hacking JUGADs. [Warning: No experience in teaching]</li>
 					</ul>
 				</div>
 
@@ -308,13 +308,13 @@
 		<div class="container">
 			 <div class="row">
 				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My JOGADs</h3>
-					<p class="lead">These are JOGADs,which i made just for fun. All are made in python. as their name is JOGAD, it is not neccessary that they will always work.</p>
+					<h3 class="section-heading">My JUGADs</h3>
+					<p class="lead">These are JUGADs,which i made just for fun. All are made in python. as their name is JUGAD, it is not neccessary that they will always work.</p>
 					<ul class="descp lead2">
-						<li><b><a >Submit assignment after deadline</a> : </b>Using this JOGAD, we can submit our assignment after deadline.and TA/prof won't even know that it is late submission</li>
+						<li><b><a >Submit assignment after deadline</a> : </b>Using this JUGAD, we can submit our assignment after deadline.and TA/prof won't even know that it is late submission</li>
 						<li><b><a >Proxy Free Download</a> : </b>Using this method we can download anything without login our proxy.</li>
-						<li><b><a >Change marks in Demo</a> : </b>Using this JOGAD, we can even change our marks in spreadSheet, which were given by TA during DEMO of assignments.</li>
-						<li><b><a >Bypass Server</a> : </b>Using this JOGAD we can open the blocked websites.</li>
+						<li><b><a >Change marks in Demo</a> : </b>Using this JUGAD, we can even change our marks in spreadSheet, which were given by TA during DEMO of assignments.</li>
+						<li><b><a >Bypass Server</a> : </b>Using this JUGAD we can open the blocked websites.</li>
 					</ul>
 				</div>
 
