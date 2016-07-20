@@ -409,8 +409,8 @@
 					<address style='' >
 						<h3>Local address</h3>
 						<p class="lead" style='width:700px;' ><a  target='_blank'  href="https://www.google.co.in/maps/place/Aravali+Hostel+Common+Room,+IIT+Campus,+New+Delhi,+Delhi+110016/@28.5484389,77.1841636,18z/data=!4m2!3m1!1s0x390d1df27d6bc4ed:0x938649b6a3d6a805">
-						3rd Floor, Building G5, Gali G12, G block, Hari Nagar, Delhi, India, Earth</a><br>
-						Pin: 110016<br>
+						3rd Floor, Building G5, Gali G12, G block, Hari Nagar, Delhi, India</a><br>
+						Pin: 110058<br>
 						Phone: +91-750-375-9053
 						<!-- <span style='color:#777777;font-size:13px;' >(Please call me <b>iff</b> It's Damm urgency)</span> -->
 
