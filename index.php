@@ -1,483 +1,461 @@
-<!doctype html>
-<html>
+<?php
+
+
+function disp_tabs($isbig=true) {
+	foreach(array(
+			array("About", "about"), 
+			array("Skills", "skills"),
+			array("Portfolio", "portfo"), 
+			array("Experience", "exp"), 
+			array("Testimonials", "tnms"), 
+			array("Contact", "contact")
+		) as $i) {
+	?>
+	<li class='<?php echo ($isbig ? '': 'navbar_tab_small'); ?>' ><a class='<?php echo ($isbig ? "navbar_tab" : "navbar_tab_small"); ?>  scolltillname' data-mshref="<?php echo $i[1]; ?>" ><?php echo $i[0]; ?></a></li>
+	<?php
+	}
+}
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-	<meta HTTP-EQUIV="Expires" CONTENT="-1">
- 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Mohit Saini">
-	<title>Freelance Web developer in IIT Delhi,PHP,MySQL,JavaScript,Jquery developer,Game & WebApp developer,Automated python script writer,web crawler</title>
-	<meta name="keywords" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jugads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
-	<meta name="description" content="Freelance Web developer in Delhi,PHP developer From IIT Delhi,PHP coder,PHP developer,mysql coder,Javascript developer,good web developer in India , php,mysql,javascript,jquery,css,html,web application , game developer, game developer in delhi,game developer in IIT Delhi,Jquery developer,JavaScript developer,MySql Server,MySql query,Linux shell scripting,automated scripts,python scripts,web crawling,online web applications developer,linux command line scripting, python server and sockets, hacking jugads, proxy free download , scrapy, home tutor, php tutor, Javascript tutor, Jquery tutor, Ajax tutor, yoga meditation teacher."/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Parallax Template - Materialize</title>
+
+	<!-- CSS  -->
+<!-- 	<link href="assets/css/gfont.css" rel="stylesheet">
+	<link href="assets/libs/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ -->
 
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
- 
-	<!-- Custom Google Web Font -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/gfont.css" rel="stylesheet">
+  <link href="css1/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css1/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Custom CSS-->
-	<link href="css/general.css" rel="stylesheet">
-	
-	 <!-- Owl-Carousel -->
-	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	
-	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
-	
-	<script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
+
 </head>
-
-<body id="home">
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
-	<!-- NavBar-->
-	<nav class="navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand hide" href="#home">Mohit Saini</a>
-			</div>
-			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-							<ul class="nav navbar-nav">
-					<li class="menuItem"><a href="#main">Home</a></li>
-					<li class="menuItem"><a href="#screen">About me</a></li>
-					<li class="menuItem"><a href="#port">Portfolio</a></li>
-					<li class="menuItem"><a href="#projects">My Projects</a></li>
-					<li class="menuItem"><a href="#jogads">My JUGADs</a></li>
-					<li class="menuItem"><a href="#achiev">Achievement</a></li>
-					<li class="menuItem"><a href="#contact">Contact</a></li>
-					<li class="menuItem"><a href="#hiring">Hiring</a></li>
+<body>
+	<div class='navbar-fixed'  >
+		<nav class="white" role="navigation"  >
+			<div class="nav-wrapper menucontainer"  >
+				<a id="logo-container" data-mshref="home" href="" class="brand-logo scolltillname" style='cursor:pointer;' >
+					<img src='photo/logo.png' style='vertical-align:middle;' class='responsive-img hide-on-small-only' >
+					<img src='photo/logo5.png' style='vertical-align:middle;' class='responsive-img hide-on-med-and-up' >
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<?php
+					disp_tabs(true);
+					?>
 				</ul>
-			</div>
-		   
-		</div>
-	</nav>
-	
-	<div id ="main" class="content-section-a">
 
-		<div class="container">
-			
-			<div class="row">
-			
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-					<img class="img-responsive " src="img/moto2.png" alt="">
-				</div>
-				<?php
-				if(false) {
-				?>
-				<div style='' >
-					<a style='color:red;font-size:20px;' >
-					Unfortunately, I am involved in other things till 11th May, 2016. So, if you need you can book me for a project right now, and I will begin working on it after 11th May. Sorry for the incovenience.</a>
-					<div align=right style='font-size:12px;' > Updated on January 14, 2016</div>
-				</div>
-				<?php
-				}
-				?>
-				<div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">A Crazy Coder</h3>
-					<p class="lead">Hey,<br>I am Mohit Saini and I just passed out from IITD(2016) after finishing B.tech in Computer Science & Engineering. Now I am working as full time freelancer. I was also working as freelancer since the past three years.<br>
-					Only time when i am not coding is, when I am sleeping :D
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- /.container -->
-	</div>
-
-
-
-
-	<div id="screen" class="content-section-b"> 
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 wow fadeInLeftBig">
-					 <div id="owl-demo-1" class="owl-carousel">
-					 							<a href="img/mohit/mohit0.jpg" class="image-link">
-							<div class="item" style='max-height:500px;overflow-y:hidden' >
-								<img  class="img-responsive img-rounded" src="img/mohit/mohit0.jpg" alt="">
+				<ul id="nav-mobile" class="side-nav" style='width:240px;' >
+					<li class="mobile-profile" style='background:url("photo/home-bg.jpg") no-repeat scroll center center / cover;' >
+						<div class="profile-inner">
+							<div class="pp-container">
+								<img src="photo/mohit1.jpg" alt="">
 							</div>
-						</a>
-												<a href="img/mohit/mohit1.jpg" class="image-link">
-							<div class="item" style='max-height:500px;overflow-y:hidden' >
-								<img  class="img-responsive img-rounded" src="img/mohit/mohit1.jpg" alt="">
-							</div>
-						</a>
-												<a href="img/mohit/mohit2.jpg" class="image-link">
-							<div class="item" style='max-height:500px;overflow-y:hidden' >
-								<img  class="img-responsive img-rounded" src="img/mohit/mohit2.jpg" alt="">
-							</div>
-						</a>
-												<a href="img/mohit/mohit3.jpg" class="image-link">
-							<div class="item" style='max-height:500px;overflow-y:hidden' >
-								<img  class="img-responsive img-rounded" src="img/mohit/mohit3.jpg" alt="">
-							</div>
-						</a>
-											</div>	   
-				</div>
-
-
-				<div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-					<h3 class="section-heading">About me</h3>
-					<div class="sub-title lead3"></div>
-					<p class="lead">I have already told about me. Scroll up :P</p>
-				</div>  			
-
-			</div>
-		</div>
-	</div>
-
-	<div class="content-section-a">
-		<div class="container">
-			 <div class="row">
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-					<img  class="img-responsive img-rounded" src="img/performtask.png" alt="">
-				</div>
-
-
-				<div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My knowledge</h3>
-					<p class="lead">Altough I am impartial when it comes to languages or told for coding. </p>
-					<ul class="descp lead2">
-						<li><b>PHP,Javascript,JQuery,MySQL : </b> Very good and fluent in php, javascript, JQuery, MySQL. I make websites using php backend.</li>
-						<li><b>CSS,HTML : </b> I am not a very stud designer but somehow i manage to make it good looking using materialize css.</li>
-						<li><b>Python,C++,Java : </b> I am very adept at coding in in Python, C++, Java. My favourite out of them is Python because of its sheer simplicity and ease. </li>
-						<li><b>Tech. support : </b> I manage websites hosted on linux server and update them time to time. I prefer a Linux envionment for its usability and programmer-friendly interface.</li>
-						<li><b>JUGAD : </b> I love to make jugads wherever I get a chance!</li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div  class="content-section-b">
-		<div class="container">
-			 <div class="row">
-
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200"> 
-					<h3 class="section-heading">What I can do</h3>
-					<ul class="descp lead2">
-						<li><b>Web developer : </b> I'm a good developer and love to learn any new tool associated with it too.</li>
-						<li><b>Automated script writer : </b> I like to multi-task a lot of things, and so I often I find myself running out of time for other minor things. Hence, I make a script for every such minor task! It saves a lot of time and I am very passionate about it.</li>
-						<li><b>Web crawler : </b> It is one of my super great interests. I have crawled many websites for various purposes (almost everytime purpose was fun).
-							My past experience inculdes and intern at proptiger.com, where I crawled the complete website commonfloor.com.
-						</li>
-						<li><b>Tester : </b> I have done a lot of work on python-selenium for website testing & automation scripts. </li>
-						<li><b>Private tutor: </b> I can teach coding (in any language/tool/software I mentioned above) and also hacking JUGADs. [Warning: No experience in teaching]</li>
-					</ul>
-				</div>
-
-
-			</div>
-		</div>
-	</div>
-	<div id=port class="content-section-a">
-		<div class="container">
-			 <div class="row">
-
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My Portfolio</h3>
+							<h3>Mohit Saini</h3>
+							<h5>Web and Android Developer</h5>
+						</div>
+					</li>
 					<?php
-						if(true) {
+					disp_tabs(false);
 					?>
-					<div style='' >
-						<p class="lead" style='display:none;' ><b>kurrybox.in</b>: It's a portal for food startup, where you can order food, listed by local chefs in your area. & get the food next to your door within 20 minutes. I am proud to say that i myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
-						<br>
-						</p>
-						<p class="lead"><b><a href="http://classpundit.com" target="_blank" >classpundit.com</a></b>: It's a portal for classes for children, like music classes, dance classes etc. they can search for classes on map. I myself made it from scratch including it's designing, backend, feature structuring, hosting, everything till launching.
-						<br>
-						</p>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons"  style='color:rgb(114, 114, 114);'  >menu</i></a>
+			</div>
+		</nav>
+	</div>
 
-						<p class="lead"><b><a href="http://messmart.com" target="_blank" >messmart.com</a></b>: It's a portal for students in kota to book their mess smartly. They can choose a mess, order meal. This startup is going to launch very soon.
-						<br>
-						</p>
+	<div id="index-banner" class="parallax-container" style='' name='home' >
 
-						<p class="lead"><a href="http://eduguidefoundation.com/" target="_blank" ><b>eduguidefoundation.com</b></a>: It's a profile website for a free school in rural area. I'm technical adviser and school's model designer there.
-						<br>
-						</p>
+		<div class="" style='height:85vh;display:table;margin:auto;' >
+			<div class="container" style='display:table-cell;vertical-align:middle;' >
+				<br><br>
+				<h1 class="header center text-lighten-2 main-title ">
+					<span style='color:white;' >HI! I'm</span>
+					<span style='color:#00bcd4;' > Mohit Saini</span>
+				</h1>
+				<h5 class="header center home-subtitle">Web and Android Developer from IIT Delhi, India</h5>
+				<div class="row center">
 
-						<p class="lead"><a href="http://letsworkforindia.org" target="_blank" ><b>letsworkforindia.org</b></a>: It's forum, which is going to launch very soon. where people can discuss issues in our country & give solution. We are planning to create a team, which will be working on solutions, suggested by people.
-						<br>
-						</p>
+				</div>
+				<div class="row center">
+					<a href="#contact" data-mshref='contact' class="scolltillname hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text" style='color: white; background-color:#00bcd4; padding: 0 1.1rem; line-height:45px; height:45px;  ' >Hire Me<i class="material-icons left" style='margin-right:6px;font-size:18px;' >send</i>
+										</a>
+				</div>
+				<br><br>
 
-						<p class="lead"><a href="http://stillhungry.in/cs/" target="_blank" ><b>CS2012 Yearbook</b></a>: It was a portal, where people (from our batch) can write testimonials for each other, create polls, vote for people, Generate Yearbook PDF etc. I have closed it now.
-						<br>
-						</p>
+			</div>
+		</div>
+		<div class="parallax"><img src="photo/home-bg.jpg" alt="Unsplashed background img 1"></div>
+	</div>
 
 
+
+	<div style='background-color:#fafafa' name="about" >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+			<div class="row" >
+				<div class='col s12 m12 l4' >
+					<div class='about-subtitle' >My Story</div>
+					<div class='normaltext' >
+	Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. Now I am full time freelancer living in hari nagar in delhi. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
+	After passing out I created a team of designer and developers who work with me. 
 					</div>
-					<?php
-						}
-					?>
-							
-
-
-						<p class="lead"><b>getiitians.com</b>: It's a portal for online or offline teaching, where you can search for the teacher who can teach you a subject of your choice within your desired price, listed by IITians teachers anywhere in universe(for online teaching) or offline teachers(in your local area). & book an appointment & get the quality education. I made it's backend from scratch including it's feature structuring, hosting, leading the team of designers, everything till launching. currently it's being run by some other developers. So it's changed into different theme.
-						<br>
-						</p>
-
-					<p class="lead"><b>mslib</b>: It's my framework. I made it (actually i never made it, It's going on) using python, ocamllex, ocamlyacc. I spent my 3 years in it & expecting to spend whole life in it. 
-					 It's purpose is to fast the development process, make clean structures, automate boring tasks etc.
-					 It's one of best things, I have in my life.
-					</p>
 				</div>
-
-
-			</div>
-		</div>
-	</div>
-
-
-	<div id=projects class="content-section-b">
-		<div class="container">
-			 <div class="row">
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My Personal Projects</h3>
-					<p class="lead">These are the projects, which I made out of interest on my own.</p>
-					<ul class="descp lead2">
-						<li><b><a target='_blank' href='http://checkgrade.0fees.us' >Grade & Courses Checking service for IITD people</a> : </b>It is a service using which IITD students, who cannot access Intranet can check their semester grades and can also check their course enrolled for upcoming semester.
-							Our grades are uploaded on private network in IIT-Delhi, so I made a form, which is hosted in public network. People enter their username and password in that public website . There is another script running inside private network of IIT Delhi, which receives the request sent by public server and check grades , and replies back to public server.
-							So, people at home just enter their username and password in form & get grades.<br>
-							At end of this semester, 3557 real students (out of around 6k students in IITD) used it.
-						</li>
-						<li><b><a target='_blank' >mealmonk</a> : </b>Made it's complete backend and integrated them with front end HTML,CSS pages.</li>
-						<li><b><a target='_blank' >inspiredwe</a> : </b> Made complete website. It is a social website to inspire people to do something for society.</li>
-						<li><b><a target='_blank' >Training & Placement Portal</a> : </b>Made complete end to end system for training and placement in a university.It has sooo many features.</li>
-
-						<li><b><a >Lift controller</a> : </b>It is JS code to simulate the working of lift.</li>
-						<li><b><a target='_blank'  >Music player</a> : </b>It is python code to play .mp3 and .wav songs via linux commandLine. It is using pygame library. It can play music from remote server also.</li>
-						<li><b><a target='_blank'  >Reminder alarm</a> : </b>It is also made using python. We can set particular time to remind , and this APP will display a POP-UP window on screen with reminding message.</li>
-						<li><b><a target='_blank'  >Snake & Stair Game</a> : </b>Implemented snake and stair game on computer. Multiple players can play it.</li>
-						<li><b><a target='_blank'  >MS paint(MohitSaini paint)</a> : </b>It is JS code(using convas tag in html). We can draw online using this app. Its interface is almost same as MS paint(Microsoft Painting APP).</li>
-						<li><b><a target='_blank'  >Facebook hacks</a> : </b>It is a js library, which has functionality of doing various things on Facebook. Using this library we can automatically send messages, comment on any post, Post a status, get list of all friends, send Programmed message to all friends,we can change theme ,we can invite all friends to like any PAGE, we can reply to all Bday wishes and also send data of all our messages to someone.
-								I have also created a code which when sent to someone and asked to run it on his machine, their Facebook account would be hacked! Although it may seem a little nasty, I have never misused it any way I swear!						</li>
-						<li><b><a target='_blank'  >Way2sms hacks</a> : </b>It is python code, using which we can send mobile sms using way2sms account. So using this we can send automatically generated message.</li>
-						<li><b><a target='_blank'  >Gmail hacks</a> : </b>It is python code. Gmail doesn;t allow us to keep a passwrd already kept before but using this, we can do it!.</li>
-						<li><b><a >Simple Risc assembly graphical simulater</a> : </b>It is a cool graphical simulater for simple risc assembly code.</li>
-					</ul>
+				<div class='col s12 m6 l4' >	
+					<div class='card' style='' >
+						<img src="photo/mohit1.jpg" class='responsive-img' style='border-radius:5px;border:solid white 8px;border-bottom-width:2px;' >
+					</div>
 				</div>
-
-
-			</div>
-		</div>
-	</div>
-
-
-
-	<div id=games class="content-section-a">
-		<div class="container">
-			 <div class="row">
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My Games</h3>
-					<p class="lead"></p>
-					<ul class="descp lead2">
-						<li><b><a target='_blank' href='http://www.cse.iitd.ac.in/~cs1120233/fuddu/' >Focus Test Game</a> : </b>It is very simple & cool game. play it.</li>
-						<li><b><a >Jumping Rishi Game</a> : </b>It is a Game, which was bday gift for my frd Rishi.</li>
-						<li><b><a target='_blank' >Implemented puzzle game</a> : </b>It is a cool puzzle game,It was idea of my friend & i coded it.</li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div id=jogads class="content-section-b">
-		<div class="container">
-			 <div class="row">
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My JUGADs</h3>
-					<p class="lead">These are JUGADs,which i made just for fun. All are made in python. as their name is JUGAD, it is not neccessary that they will always work.</p>
-					<ul class="descp lead2">
-						<li><b><a >Submit assignment after deadline</a> : </b>Using this JUGAD, we can submit our assignment after deadline.and TA/prof won't even know that it is late submission</li>
-						<li><b><a >Proxy Free Download</a> : </b>Using this method we can download anything without login our proxy.</li>
-						<li><b><a >Change marks in Demo</a> : </b>Using this JUGAD, we can even change our marks in spreadSheet, which were given by TA during DEMO of assignments.</li>
-						<li><b><a >Bypass Server</a> : </b>Using this JUGAD we can open the blocked websites.</li>
-					</ul>
-				</div>
-
-
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<div id=achiev class="content-section-a">
-		<div class="container">
-			 <div class="row">
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">My Achievement</h3>
-					<p class="lead"></p>
-					<ul class="descp lead2">
-						<li><b><a>Code.fun.do Winner</a> : </b>Member of Winning team[1st Price](4 member) at Microsoft Code.fun.do Hackathon 2015 IIT Delhi</li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-
-	<div id="hiring" class="content-section-b">
-		<div class="container">
-			 <div class="row">
-
-				<div class="col-sm-12 wow fadeInLeftBig"  data-animation-delay="200">   
-					<h3 class="section-heading">JOBs</h3>
-					<p class="lead">Please mail me your resume.</p>
-					<ul class="descp lead2">
-						<li><b><a>Front-End HTML,CSS Designer</a> : </b>I need 2-3 Designer to desing very attrective website.</li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-
-	
-	<div  class="content-section-c hide">
-		<div class="container">
-			<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title white">
-				<h2>Get Live Updates</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-			 </div>
-			<div class="mockup-content">
-					<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-						<button type="button "><span>Subscribe to our Newsletter</span></button>
-						<div class="morph-content">
-							<div>
-								<div class="content-style-form content-style-form-4 ">
-									<h2 class="morph-clone">Subscribe to our Newsletter</h2>
-									<form>
-										<p><label>Your Email Address</label><input type="text"/></p>
-										<p><button>Subscribe me</button></p>
-									</form>
-								</div>
-							</div>
+				<div class='col s12 m6 l4'  >
+					<div style='padding-left:10px;' >
+						<div class='about-subtitle' >Personal Information</div>
+						<div>
+							<?php
+							foreach(array(
+								array("Name", "Mohit Saini"), 
+								array("Age", number_format((time()-strtotime("11-9-1996"))/(365.243*24*3600), 2)." Years"), 
+								array("Phone", "+91 7503-759-053"), 
+								array("Email", "mohitsaini1196@gmail.com"), 
+								array("Address", "Hari Nagar, Delhi, India"), 
+								) as $i) {
+							?>
+							<h5 class='normaltext' style='border-bottom: 1px solid #eeeeee;padding-bottom:10px;margin-bottom:10px;' >
+								<span style='min-width:70px;display:inline-block;' ><?php echo $i[0]; ?> : </span>
+								<?php echo $i[1]; ?>
+							</h5>
+							<?php
+							}
+							?>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
+		<div style='height:100px;' ></div>
 	</div>
-	
 
 
 
 
-	
-	<!-- Contact -->
-	<div id="contact" class="content-section-a">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-					<h2>Contact me</h2>
-					<p class="lead" style="margin-top:0">Drop an mail, i will respond asap.</p>
-				</div>
+
+	<div style='background-color: #00bcd4' name='skills' >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+
+
+			<p class="title">Skills</p>
+			<p class="normaltext" style='color:white;font-size:18px;font-weight:500;' >I am impartial when it comes to languages. I have worked on many languages. I also work on my own language named 'msl', which is part of my framework 'mslib'. 
+				<br><br>
+				<div style='height:10px;' ></div>
+				<?php
+
+				$skills = array(
+					array("PHP, Javascript, JQuery, MySQL", "Very good and fluent in php, javascript, JQuery, MySQL. I make websites using php backend."), 
+					array("CSS, HTML, XML", "I am a decent designer. I work on bootstrap and materializecss. Sometime I use a template and work on that."), 
+					array("Python, C++, Java", "I am very adept at coding in Python, C++, Java. My favourite out of them is Python because of its sheer simplicity and ease. I work in Java for android development."), 
+					array("Tech support", "I manage websites hosted on linux server and update them time to time. I prefer a Linux envionment for its usability and programmer-friendly interface."), 
+					array("Wireframe Designing", "I love to design Wireframe and functional architecture of a idea. I love to spend time on a idea to decide a efficient structure for best user experience."), 
+				);
+				foreach ($skills as $key => $value) {
+				?>
+				<b style='font-size:22px;font-weight:900;color:white;' ><?php echo $value[0]; ?> </b><br>
+				<b style='font-weight:500;color:white;' ><?php echo $value[1]; ?></b>
+				<br>
+
+				<div style='height:19px;' ></div>
+
+				<?php
+				}
+				?>
+			</p>
+
+
+
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+
+	<div style='background-color: #fafafa' name='portfo'  >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+
+
+			<p class="title" style='color:#333' >Portfolio</p>
+			<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >I have worked on many projects which includes Web, Android applications for Startups, Games etc. I make completly responsive designs which works perfectly on mobile, tablet, computer etc. I am very good in writing crawling-scripts to fetch data from internet. 
+			</p>
+			<div class='row' >
+			<?php
+			$projects = array(
+				array("Web Portal & App", "photo/proj2.png", "MesSmart", "http://www.messmart.com", "www.messmart.com", "A portal where people can book their daily meal from local mess in their area. Mess can join and provide food for people. Currently working on Kota. It's android app developed with help of our internship team is also live on google play"), 
 				
-				<hr class="featurette-divider hidden-lg">
-				<div class="col-md-5 col-md-push-1 address">
-					<address style='' >
-						<h3>Local address</h3>
-						<p class="lead" style='width:700px;' ><a  target='_blank'  href="https://www.google.co.in/maps/place/Aravali+Hostel+Common+Room,+IIT+Campus,+New+Delhi,+Delhi+110016/@28.5484389,77.1841636,18z/data=!4m2!3m1!1s0x390d1df27d6bc4ed:0x938649b6a3d6a805">
-						3rd Floor, Building G5, Gali G12, G block, Hari Nagar, Delhi, India</a><br>
-						Pin: 110058<br>
-						Phone: +91-750-375-9053
-						<!-- <span style='color:#777777;font-size:13px;' >(Please call me <b>iff</b> It's Damm urgency)</span> -->
+				array("Web Portal", "photo/proj3.png", "Batch Yearbook", "yearbook.pdf", "yearbook.pdf", "A portal using which our batch was able to write testimonials for others. We used it to create yearbook of our computer science 2012 entry batch. There were many feature in portal. Portal was able to export the yearbook as pdf. Attached pdf is exported from portal except the starting, ending covers." ), 
 
-						<br>
-						Mail: mohitsaini1196@gmail.com</p>
-					</address>
+				array("Web Portal", "photo/proj1.png", "Classpundit", "http://www.classpundit.com", "www.classpundit.com", "A portal helps you find classes in your neighborhood. Like music classes, basketball classes etc. You can connect with class provider through portal. "), 
 
-					<h3>Social</h3>
-					<li class="social"> 
-						<a target='_blank' href="https://www.facebook.com/1196mohitsaini"><i class="fa fa-facebook-square fa-size"> </i></a>
-						<a target='_blank' href="https://twitter.com/mohitsaini1196"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-						<a target='_blank'  href="https://plus.google.com/+MohitSainiaol/posts"><i class="fa fa-google-plus-square fa-size"> </i></a>
-					</li>
+				array("Profile Website", "photo/proj5.png", "Namami Yoga", "http://www.namamiyoga.com", "www.namamiyoga.com", "It's Profile Website for a Yoga Class named Namami Yoga. It's a responsive profile working in every sized device."), 
+				
+				array("Web Portal", "photo/proj7.png", "KurryBox", "", "", "A Portal for Food startup in Delhi. People can order food using it. But Startup is closed now due to market unavailability. So website doesn't exists anymore."), 
+
+
+				array("Web Portal", "photo/proj4.png", "getIITians", "http://www.getiitians.com", "www.getiitians.com", "A portal for online teaching. You can search for a teacher of any subject, book an appointment for a particular time slot. Teacher can teach you online on scheduled time. I made it in summer 2015 leading a team of design interns. Portal is updated a lot after that."), 
+				
+				array("My Library 'MsLib'", "photo/proj6.png", "MsLib", "", "", "Mslib is a framework, where i work most of the time. It has many sections. It helps me everywhere in development. It can understand a language, convert it to another desired language. It can understand very friendly syntex. It can optimize the code, It can seprate the part of code, which can be directly cached. With help of my framework many things can be done very fast. It can handle ajax actions very smartly and developer-friendly manner. In short, I love my mslib"), 
+				);
+
+				for($i=0; $i<count($projects); $i++) {
+					$proj = $projects[$i];
+				?>
+					<div class="col s12 m6 l4 single-card-box wow fadeInUpSmall left" data-wow-duration=".7s">
+						<div class="card" style='margin-top:50px;min-height:450px;' >
+							<div class="card-image waves-effect waves-block waves-light">
+								<p class="left-align card-title-top" style='color:#727272;font-weight:400;padding:0px 20px 10px ;line-height:1.7;border-bottom: 1px solid #eee;' ><?php echo $proj[0]; ?></p>
+								<div class="activator card-img-wrap" onclick='/*m=$("#bigpic");m.find("img").attr("src", ""); m.find("img").attr("src", $(this).find("img")[0].src); m.openModal();*/' >
+									<img class="" src="<?php echo $proj[1]; ?>"  >
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator brand-text"><?php echo $proj[2]; ?><i class="material-icons right">more_vert</i></span>
+								<p><a <?php echo ($proj[3] != '' ? 'href="'.$proj[3].'"': ''); ?> target="_blank" ><?php echo $proj[4]; ?></a></p>
+							</div>
+							<!-- Reveal content-->
+							<div class="card-reveal">
+								<div class="rev-title-wrap">
+									<span class="card-title activator brand-text"><?php echo $proj[2]; ?><i class="material-icons right">close</i></span>
+
+
+										
+									<p><a <?php echo ($proj[3] != '' ? 'href="'.$proj[3].'"': ''); ?> target="_blank" ><?php echo $proj[4]; ?></a></p>
+								</div>
+								<p class="rev-content">
+									<?php echo $proj[5]; ?>
+								</p>
+							</div>
+						</div>
+					</div>
+				<?php
+				}
+				?>
+			</div>
+
+			<p class="title" style='color:#333' >Personal Projects</p>
+			<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >I keep on working on whatever stuff i get. I love to make new things using whatever ideas i get. So I have around 50-60 small-small personal projects. I have listed few of them. 
+				<div style='height:26px;' ></div>
+				<?php
+				$skills = array(
+					array("Grade Checker", "It is a service using which IITD students, who cannot access IIT's Internal Intranet from home can check their semester grades and can also check their course enrolled for upcoming semester. Our grades are uploaded on private network, which works within IIT-Delhi, So I made a system, which bypass the data through public server. 3557 Students (out of around 6k students in IITD) used my service.", ""), 
+					array("Training & Placement portal", "Made complete end to end system for training and placement for a university.", ""), 
+					array("Lift Simulator", "Made a funny lift Simulator. Which can used as backend code for lift.", "http://www.cse.iitd.ac.in/~cs1120233/lift"), 
+					array("Simple Risc Assembler", "It is a graphical simulater for simple Risc assembly language. ", "http://www.cse.iitd.ac.in/~cs1120233/assembler/"), 
+					array("Focus Game", "This is a simple and cool game. Play it and test your focus power.", "http://www.cse.iitd.ac.in/~cs1120233/focus"), 
+					array("eduguidefoundation.com", "This is a profile website for a free school running in rural area.", "http://eduguidefoundation.com"), 
+					array(), 
+				);
+				foreach ($skills as $key => $value) {
+				?>
+				<b style='font-size:22px;font-weight:600;color:#444' ><a <?php echo ($value[2]=='' ? '': 'href="'.$value[2].'"' ); ?> target="_blank" style='color:inherit' ><?php echo $value[0]; ?></a></b><br>
+				<b style='font-weight:500;color:#444;font-size:16px;' ><?php echo $value[1]; ?></b>
+				<br>
+				<div style='height:19px;' ></div>
+				<?php
+				}
+				?>
+			</p>
+
+
+			<p class="title" style='color:#333' >Achievements</p>
+			<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >
+				<div style='height:26px;' ></div>
+				<?php
+				$skills = array(
+					array("Code.fun.do winner", "We were part of window-app compitition by mictrosoft at our collage IIT Delhi. Our team(4 member) was winning team of all. Our team got 32000 rupee as winning award."), 
+				);
+				foreach ($skills as $key => $value) {
+				?>
+				<b style='font-size:22px;font-weight:600;color:#444' ><a <?php echo ($value[2]=='' ? '': 'href="'.$value[2].'"' ); ?> target="_blank" style='color:inherit' ><?php echo $value[0]; ?></a></b><br>
+				<b style='font-weight:500;color:#444;font-size:16px;' ><?php echo $value[1]; ?></b>
+				<br>
+				<div style='height:19px;' ></div>
+				<?php
+				}
+				?>
+			</p>
+
+
+
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+
+
+	<div style='background-color: #00bcd4' name='exp' >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+
+
+			<p class="title">Experience</p>
+			<p class="normaltext" style='color:white;font-size:18px;font-weight:500;' >I am coding since 4 year, but freelancing since 3 years. In that time I have worked with many startups. Mainly I handle the technical part of a startup which includes design, user experience, efficient architecture designing, development, testing of portal.
+				<br><br>
+
+
+
+
+				<?php
+
+				$skills = array(
+					array("Internship at proptiger", "It was my first experice of internship. Proptiger is a real estate company, where I was memeber of crawling team. I wrote crawling scripts to fetch the data from other website and upload it on our website.."), 
+					array("Institute Internship ", "In my institute internship during my 3rd year, I was leading a team of 5-6 member, consisting designers, developers for the startup getIITians.com . We developed a online teaching portal where students can book appointments for teacher and teacher can teach the student online."), 
+					array("Web Development Internship", "I worked for a startup which provides IT solutions. I developed a portal for Training&Placement managment at a university."), 
+				);
+				foreach ($skills as $key => $value) {
+				?>
+				<b style='font-size:22px;font-weight:900;color:white;' ><?php echo $value[0]; ?> </b><br>
+				<b style='font-weight:500;color:white;' ><?php echo $value[1]; ?></b>
+				<br>
+
+				<div style='height:19px;' ></div>
+
+				<?php
+				}
+				?>
+			</p>
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+
+
+	<div style='background-color: #fafafa' >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+			<p class="title" style='color:#333' >Personal Jugad</p>
+			<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >In 4 years of IITD, I developed many jugads to do many cool stuff. Since I'm passed out now, So It make sense to leak the Idea behind them. I always used these tricks for fun only.
+				<div style='height:26px;' ></div>
+				<?php
+				$skills = array(
+					array("Submit Assignment After Deadline", "Using a trick, we can submit assignments after deadline. Actually my idea is dependent on a observation that during assignment demo TA run our code first, if it's running, he asks us questions about it. <br> So If I feel that I can't finish the assignment before deadline what I do is, I submit a special code instead of assignment code before deadline. Now Deadline is over. I work on assignment code after deadline, submit it on my personal portal. Now the day will come when we have to demonstrate our assignment. TA will run the code thinking it's assignment code. Special-Code, which I submitted as assignment code is executed. Special code is very special with some weired things written in code. What It does is: <br> 1. Download the assignment code from my personal portal. <br>2. Run the downloaded assignment code.<br> 3. Delete itself(special code)<br> Now TA can see the results of assignment, I submitted after deadline on my personal portal. Code is working, now he will check code, He will find correct code. <br> And that's All :D"), 
+					array("Proxy Free Download", "We had a internet access limit of 2 GB per week. Whenever we download something, our proxy-quota decreases. I had a method to download anything without loosing my proxy. My target were only PHD people having no-proxy-limit. <br>I observed that all the PHD people coming to lab love a special computer in lab of all. They always use the same computer. What I did is, developed a python socket-server program. What I programmed in server part is: <br>1. Receive Any message, <br>2. execute it as linux command. <br> 3. Send back result of linux command. <br> Program was also able to check which proxy is currently login on computer. So using my client-program, I was able to send message to server program and run any command on the environment server program is running. I run the server on all the computers, where those PHD people love to sit. I screen-locked my account with server's script running on them. After a while when those people arrived at their favorite place, they logined their proxy on system. Since proxy is logined on a IP, my script was also able to use the proxy as It was running on same IP. Now I can sit on different computer and send command to server. I can send a command which means 'Download this and store at Desktop' and get downloaded whatever I want using the proxy of targeted person. <br> And that's All :D :D"), 
+					array("Change Marks in Demo", "This is a method how we can change the given marks by TA in demo of our assignment. So for this, we need a socket-server pair. Along with assignment we can add extra part of code. What that does is: Run my server script in background process of linux. which can interact with client program. We can write such malicious code in c++ and compile it & delete the code. Add only complied file. when TA run the assignment code, our server script start running on his computer. Now we can run any linux command on his computer by messaging through our client script. We know that every linux computer has a special folder '.mozilla' in Home directry. It is profile of firefox. We can send a command to get his complete folder '.mozilla' . Now I got '.mozilla' folder of TA's computer. I can rename my .mozilla folder as '.mozilla1' for a while, and run his .mozilla folder in place of mine. I restart the firefox in my computer. Now I can see his firefox. Everything of his firefox. We know that almost everyone keep the gmail logined in his personal computer. So I can access his gmail account since It was logined in firefox. So I can see the shared google-sheets with him and can change the marks safely. Ofcourse I have access to his gmail account. but I won't harm him else he will doubt and can track everything.<br> And I got what I wanted. :D :D"), 
+				);
+				foreach ($skills as $key => $value) {
+				?>
+				<b style='font-size:22px;font-weight:600;color:#444' ><a <?php echo ($value[2]=='' ? '': 'href="'.$value[2].'"' ); ?> target="_blank" style='color:inherit' ><?php echo $value[0]; ?></a></b><br>
+				<b style='font-weight:500;color:#444;font-size:16px;' ><?php echo $value[1]; ?></b>
+				<br>
+				<div style='height:19px;' ></div>
+				<?php
+				}
+				?>
+			</p>
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+	<div style='background-color: #fafafa' >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer"  name='tnms' >
+			<p class="title" style='color:#333' >Testimonials</p>
+			<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >By Friends, Clients, Batch mates</p>
+			<?php
+				$tnms = array(
+					array("Aishwarya", "I have known Mohit for more than 4 years now, and havent yet come across a more hard working and capable programmer than him. He has a very sound and thorough knowledge of web development, web designing and backend development. He has worked with me on developing a 3D gaming project, and also in website development for a startup based in Kota. He facilitated the grade-viewing system in our college, which enabled us to view our scores/grades even outside of the campus. Most recently, he developed an online slam book application, in which classmates from our batch could write testimonials and post memorable photographs with each other. He also has entrepreneurship capabilities and has a lot of hands-on experience in industry level programming work.", "Batch Mate", "https://www.facebook.com/rai.aishwarya.900"), 
+					array("Nitin Agarwal", "One of the best coders of our batch. writes high quality documented code at a fantastic speed.", "Batch Mate", "https://www.linkedin.com/in/nitin-agarwal-6587a3108"), 
+				);
+				for($i=0; $i<count($tnms)-1; $i+=2) {
+			?>
+			<div class='row'  >
+				<?php
+					for($j=$i; $j<$i+2 && $j <count($tnms); $j++) {
+						$tnm = $tnms[$j];
+				?>
+				<div class='col l6 m6 s12' >
+					<div class='card-panel' >
+						<p style='font-style:italic;color:#727272;font-size:15px;line-height:25px;' ><?php echo $tnm[1]; ?></p>
+						<p align='right' > - <a target="_blank" href='<?php echo $tnm[3]; ?>' ><?php echo $tnm[0]; ?></a>
+							<br><?php echo $tnm[2]; ?>
+						</p>
+					</div>
+				</div>
+				<?php
+					}
+				?>
+			</div>
+			<?php
+				}
+			?>
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+
+
+	<div style='background-color: #00bcd4' name='contact' >
+		<div style='height:100px;' ></div>
+		<div class="menucontainer">
+
+
+			<p class="title">Contact</p>
+			<p class="normaltext" style='color:white;font-size:18px;font-weight:500;' >3rd Floor, Building G5, Gali G12, G-block, Jail Road, Hari Nagar, Delhi, India 
+				<br>
+				<span style='font-weight:600;' >mohitsaini1196@gmail.com</span> | <span>+91 7503-759-053</span>
+			</p>
+		</div>
+		<div style='height:100px;' ></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<footer style="margin-bottom:-20px;" >
+		<div class="menucontainer" style='' >
+			<div class="row">
+				<div class="col s12">
+					<ul class="left social-icons">
+						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.stillhungry.in%2F&amp;src=sdkpreparse" class="tooltips tooltipped facebook" data-position="top" data-delay="50" data-tooltip="Facebook" target="_blank" ><img src="photo/fb.png" ></a>
+						</li>
+					</ul> <!-- ./social icons end -->
+					<div class="right copyright">
+						<p class='scolltillname' data-mshref='about' style='cursor:pointer;' >&copy; Mohit Saini</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	
-	
-	<footer>
-	  <div class="container">
-		<div class="row">
-		  <div class="col-md-7" style='min-height:150px;' >
-		  	<br>
-		  	<a href='#home' >Home</a> | 
-		  	<a href='#screen' >About me</a> | 
-		  	<a href='#projects' >My skills</a> 
-			<hr>
-			<a rel="license" href="#home">
-			&copy; 2012-15 Mohit Saini
-			</a>
-		   
-	   
-		  </div> <!-- /col-xs-7 -->
-
-		</div>
-	  </div>
 	</footer>
 
-	<!-- JavaScript -->
-	<script src="js/jquery-1.10.2.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/script.js"></script>
-	<!-- StikyMenu -->
-	<script src="js/stickUp.min.js"></script>
-	<script type="text/javascript">
-	  jQuery(function($) {
-		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
-		  
-		});
-	  });
-	
-	</script>
-	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script> 
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
-	<script src="js/classie.js"></script>
-	<script src="js/uiMorphingButton_inflow.js"></script>
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script> 
 
-</body>
+	<!--  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+	<script src="assets/libs/materialize/js/materialize.min.js"></script>
+	<script src="assets/js/init.js"></script>
+-->
 
+	<div class="modal modal1" id="bigpic" style='' >
+		<img src="" />
+	</div>
+
+
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+
+  <script src="js1/materialize.js"></script>
+  <script src="js1/init.js"></script>
+
+
+
+	</body>
 </html>
