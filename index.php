@@ -26,6 +26,16 @@ function disp_tabs($isbig=true) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<title>StillHungry | Chewing each byte of code</title>
 
+	<?php
+		$tmp1 = array("keywords", "description");
+		for($i=0; $i<2; $i++) {
+	?>
+	<meta name="<?php echo $tmp1[$i]; ?>" content="Freelance Web developer in Delhi, Android Developer in Delhi, Android Developer from IIT Delhi, Java Developer, Android Studio Coder in Delhi, Android Application Developer, Android App Developer from IIT Delhi, PHP developer From IIT Delhi, PHP coder, PHP developer, mysql coder, Javascript developer, good web developer in India, php, mysql, javascript, jquery, css, html, web application, game developer, game developer in delhi, game developer from IIT Delhi, Jquery developer, JavaScript developer, MySql Server, MySql query, Linux shell scripting, automated scripts, python scripts, web crawling, online web applications developer, linux command line scripting, python server and sockets, hacking jugads, proxy free download, scrapy"/>
+	<?php
+		}
+	?>
+
+
 	<!-- CSS  -->
 <!-- 	<link href="assets/css/gfont.css" rel="stylesheet">
 	<link href="assets/libs/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
