@@ -362,7 +362,7 @@ function disp_tabs($isbig=true) {
 			<div style='height:100px;' ></div>
 			<div class="menucontainer">
 				<p class="title" style='color:#333' >Personal Jugad</p>
-				<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >In 4 years of IITD, I developed many jugads to do many cool stuff. Since I'm passed out now, So It make sense to leak the Idea behind them. I always used these tricks for fun only.
+				<p class="normaltext" style='color:#727272;font-size:18px;font-weight:400;' >In 4 years of IITD, I developed many jugads to do many cool stuff.. I just made these things for fun only.. Never used them with purpose of actually using them... Because making such things <i>thrills</i> our heart & soul completely but "using them" actually <i>kills</i> us. So there is no point in using them.
 					<div style='height:26px;' ></div>
 					<?php
 					$skills = array(
