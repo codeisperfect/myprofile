@@ -130,7 +130,7 @@ function disp_tabs($isbig=true) {
 					<div class='col s12 m12 l4' >
 						<div class='about-subtitle' >My Story</div>
 						<div class='normaltext' >
-		Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. Now I am full time freelancer living in hari nagar in delhi. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
+		Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. Now I am full time freelancer living in delhi. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
 		After passing out I created a team of designer and developers who work with me. 
 						</div>
 					</div>
@@ -149,7 +149,7 @@ function disp_tabs($isbig=true) {
 									array("Age", number_format((time()-strtotime("11-9-1996"))/(365.243*24*3600), 2)." Years"), 
 									array("Phone", "+91 7503-759-053"), 
 									array("Email", "mohitsaini1196@gmail.com"), 
-									array("Address", "Hari Nagar, Delhi, India"), 
+									
 									) as $i) {
 								?>
 								<h5 class='normaltext' style='border-bottom: 1px solid #eeeeee;padding-bottom:10px;margin-bottom:10px;' >
@@ -441,7 +441,12 @@ function disp_tabs($isbig=true) {
 
 
 				<p class="title">Contact</p>
-				<p class="normaltext" style='color:white;font-size:18px;font-weight:500;' >3rd Floor, Building G5, Gali G12, G-block, Jail Road, Hari Nagar, Delhi, India 
+				<p class="normaltext" style='color:white;font-size:18px;font-weight:500;' >
+
+				<!-- 3rd Floor, Building G5, Gali G12, G-block, Jail Road, Hari Nagar, Delhi, India  -->
+				GCL Lab, Bharti building, IIT Delhi, Delhi, India
+
+
 					<br>
 					<span style='font-weight:600;' >mohitsaini1196@gmail.com</span> | <span>+91 7503-759-053</span>
 				</p>
