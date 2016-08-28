@@ -343,7 +343,7 @@ function disp_tabs($isbig=true) {
 					foreach ($skills as $key => $value) {
 					?>
 					<b style='font-size:22px;font-weight:900;color:white;' ><?php echo $value[0]; ?> </b><br>
-					<b style='font-weight:500;color:white;' ><?php echo $value[1]; ?></b>
+					<b style='font-weight:500;color:white;font-size: 17px;' ><?php echo $value[1]; ?></b>
 					<br>
 
 					<div style='height:19px;' ></div>
@@ -358,7 +358,7 @@ function disp_tabs($isbig=true) {
 
 
 
-		<div style='background-color: #fafafa' >
+		<div style='background-color: #fafafa;display: none;' >
 			<div style='height:100px;' ></div>
 			<div class="menucontainer">
 				<p class="title" style='color:#333' >Personal Jugad</p>
@@ -394,34 +394,41 @@ function disp_tabs($isbig=true) {
 						array("Ambarish S kumar", "It is absolutely remarkable that Mohit, at the tender age of 19, has displayed such an astounding maturity in delivering the tasks which we had assigned him to do.<br>We contacted Mohit for developing an online exam, a very challenging one as it required integration of various question types. I had contacted many companies for taking up this job but none were willing as it required a lot of time. However, Mohit agreed to do the task in a shorter duration. <br>He not only completed the task within the stipulated time but also provided us exactly what we required. Through our experience with him, we can vouchsafe for his expertise in coding. He is brilliant in his work and his dedication is highly commendable. Also he is energetic, dynamic and always hungry to learn and deliver as his website rightly suggests \"stillhungry\" <br> We would definitely avail Mohit's service in all our future endeavors.  Thank you Mohit for all your help. We look forward to working with you again. All the best", "Client", "mailto:askambar@gmail.com"), 
 						array("Aishwarya", "I have known Mohit for more than 4 years now, and havent yet come across a more hard working and capable programmer than him. He has a very sound and thorough knowledge of web development, web designing and backend development. He has worked with me on developing a 3D gaming project, and also in website development for a startup based in Kota. He facilitated the grade-viewing system in our college, which enabled us to view our scores/grades even outside of the campus. Most recently, he developed an online slam book application, in which classmates from our batch could write testimonials and post memorable photographs with each other. He also has entrepreneurship capabilities and has a lot of hands-on experience in industry level programming work.", "Batch Mate", "https://www.facebook.com/rai.aishwarya.900"), 
 
-						array("Shivank Goel", 'Mohit Saini is one of the best guys I have known in the development work. I know him since past two years. His systematic approach towards coding and life in general has no match. He thinks his code not mere a code but an art. He was always a "proper indentation", "no loopholes", "no risks" and "I want end to end perfection" kind of guy.  He is always ready to take up new challenges. Tech-geek , expert , brilliant mind , hard-work and passion are defining words for the person. He is also very experienced and has worked on many real development projects. He also made an automated grade checker from home for the whole institute and could achieve what even the brightest folks couldn\'t here at IIT Delhi. A very practical minded person and hence he hits the nail right on the head and likes to work on projects with real world needs and applications. In short he is a guy whom you can always trust on.', 'Friend', 'https://www.facebook.com/shivankgoelindia'), 
-
 
 						array("Nitin Agarwal", "One of the best coders of our batch. writes high quality documented code at a fantastic speed.", "Batch Mate", "https://www.linkedin.com/in/nitin-agarwal-6587a3108"), 
 
+						array("Shivank Goel", 'Mohit Saini is one of the best guys I have known in the development work. I know him since past two years. His systematic approach towards coding and life in general has no match. He thinks his code not mere a code but an art. He was always a "proper indentation", "no loopholes", "no risks" and "I want end to end perfection" kind of guy.  He is always ready to take up new challenges. Tech-geek , expert , brilliant mind , hard-work and passion are defining words for the person. He is also very experienced and has worked on many real development projects. He also made an automated grade checker from home for the whole institute and could achieve what even the brightest folks couldn\'t here at IIT Delhi. A very practical minded person and hence he hits the nail right on the head and likes to work on projects with real world needs and applications. In short he is a guy whom you can always trust on.', 'Client', 'https://www.facebook.com/shivankgoelindia'), 
+
+						array("Ira Trivedi", " Mohit if a diligent worker and a talented programmer. He gets the job done in a fast and efficient manner. I recommend him to everyone and anyone who wants a cost effective and well made website.", "Client", "https://www.google.co.in/?client=ubuntu#channel=fs&q=ira+trivedi&gfe_rd=cr"), 
+
 					);
-					for($i=0; $i<count($tnms); $i+=2) {
+					$tabdiv = array(array(0, 1), array(4, 3, 2));
+
+					
 				?>
 				<div class='row'  >
 					<?php
-						for($j=$i; $j<$i+2 && $j <count($tnms); $j++) {
-							$tnm = $tnms[$j];
+					foreach($tabdiv as $tnmindexes) {
 					?>
 					<div class='col l6 m6 s12' >
+						<?php
+							foreach($tnmindexes as $j) {
+								$tnm = $tnms[$j];
+						?>
 						<div class='card-panel' >
 							<p style='font-style:italic;color:#727272;font-size:15px;line-height:25px;' ><?php echo $tnm[1]; ?></p>
 							<p align='right' > - <a target="_blank" href='<?php echo $tnm[3]; ?>' ><?php echo $tnm[0]; ?></a>
 								<br><?php echo $tnm[2]; ?>
 							</p>
 						</div>
+						<?php
+							}
+						?>
 					</div>
 					<?php
 						}
 					?>
 				</div>
-				<?php
-					}
-				?>
 			</div>
 			<div style='height:100px;' ></div>
 		</div>
