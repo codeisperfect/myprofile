@@ -131,7 +131,7 @@ function disp_tabs($isbig=true) {
 						<div class='about-subtitle' >My Story</div>
 						<div class='normaltext' >
 		Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. Now I am full time freelancer living in delhi. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
-		After passing out I created a team of designer and developers who work with me. 
+		I have a team of designer and developers who work with me. 
 						</div>
 					</div>
 					<div class='col s12 m6 l4' >	
@@ -233,7 +233,7 @@ function disp_tabs($isbig=true) {
 
 					array("Web Portal", "photo/proj4.png", "getIITians", "http://www.getiitians.com", "www.getiitians.com", "A portal for online teaching. You can search for a teacher of any subject, book an appointment for a particular time slot. Teacher can teach you online on scheduled time. I made it in summer 2015 leading a team of design interns. Portal is updated a lot after that."), 
 					
-					array("My Library 'MsLib'", "photo/proj6.png", "MsLib", "", "", "Mslib is a framework, where i work most of the time. It has many sections. It helps me everywhere in development. It can understand a language, convert it to another desired language. It can understand very friendly syntex. It can optimize the code, It can seprate the part of code, which can be directly cached. With help of my framework many things can be done very fast. It can handle ajax actions very smartly and developer-friendly manner. In short, I love my mslib"), 
+					// array("My Library 'MsLib'", "photo/proj6.png", "MsLib", "", "", "Mslib is a framework, where i work most of the time. It has many sections. It helps me everywhere in development. It can understand a language, convert it to another desired language. It can understand very friendly syntex. It can optimize the code, It can seprate the part of code, which can be directly cached. With help of my framework many things can be done very fast. It can handle ajax actions very smartly and developer-friendly manner. In short, I love my mslib"), 
 					);
 
 					for($i=0; $i<count($projects); $i++) {
@@ -497,6 +497,19 @@ function disp_tabs($isbig=true) {
 
   <script src="js1/materialize.js"></script>
   <script src="js1/init.js"></script>
+
+
+<!-- Hotjar Tracking Code for http://stillhungry.in -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:279186,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
 
 
