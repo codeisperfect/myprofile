@@ -220,15 +220,15 @@ function disp_tabs($isbig=true) {
 				<div class='row' >
 				<?php
 				$projects = array(
-					array("Web Portal & App", "photo/proj2.png", "MesSmart", "http://www.messmart.com", "www.messmart.com", "A portal where people can book their daily meal from local mess in their area. Mess can join and provide food for people. Currently working on Kota. It's android app developed with help of our internship team is also live on google play"), 
+					array("Web Portal & App", "photo/proj2.png", "MesSmart", "http://www.messmart.com", "www.messmart.com", "A portal where people can book their daily meal from local mess in their area. Mess can join and provide food for people. Currently working on Kota. It's android app developed with help of our internship team is also live on google play. backend made with help of Mslib"), 
 					
-					array("Web Portal", "photo/proj3.png", "Batch Yearbook", "yearbook.pdf", "yearbook.pdf", "A portal using which our batch was able to write testimonials for others. We used it to create yearbook of our computer science 2012 entry batch. There were many feature in portal. Portal was able to export the yearbook as pdf. Attached pdf is exported from portal except the starting, ending covers." ), 
+					array("Web Portal", "photo/proj3.png", "Batch Yearbook", "yearbook.pdf", "yearbook.pdf", "A portal using which our batch was able to write testimonials for others. We used it to create yearbook of our computer science 2012 entry batch. There were many feature in portal. Portal was able to export the yearbook as pdf. Attached pdf is exported from portal except the starting, ending covers. Another purpose of it's development was to feed some code to Mslib." ), 
 
-					array("Web Portal", "photo/proj1.png", "Classpundit", "http://www.classpundit.com", "www.classpundit.com", "A portal helps you find classes in your neighborhood. Like music classes, basketball classes etc. You can connect with class provider through portal. "), 
+					array("Web Portal", "photo/proj1.png", "Classpundit", "http://www.classpundit.com", "www.classpundit.com", "A portal helps you find classes in your neighborhood. Like music classes, basketball classes etc. You can connect with class provider through portal. It was also made with help of Mslib."), 
 
-					array("Profile Website", "photo/proj5.png", "Namami Yoga", "http://www.namamiyoga.com", "www.namamiyoga.com", "It's Profile Website for a Yoga Class named Namami Yoga. It's a responsive profile working in every sized device."), 
+					array("Profile Website", "photo/proj5.png", "Namami Yoga", "http://www.namamiyoga.com", "www.namamiyoga.com", "It's Profile Website for a Yoga Class named Namami Yoga. It's a responsive profile working in every sized device. It was also made with help of Mslib."), 
 					
-					array("Web Portal", "photo/proj7.png", "KurryBox", "", "", "A Portal for Food startup in Delhi. People can order food using it. But Startup is closed now due to market unavailability. So website doesn't exists anymore."), 
+					array("Web Portal", "photo/proj7.png", "KurryBox", "", "", "A Portal for Food startup in Delhi. People can order food using it. But Startup is closed now due to market unavailability. So website doesn't exists anymore. It was also made with help of Mslib."), 
 
 
 					array("Web Portal", "photo/proj4.png", "getIITians", "http://www.getiitians.com", "www.getiitians.com", "A portal for online teaching. You can search for a teacher of any subject, book an appointment for a particular time slot. Teacher can teach you online on scheduled time. I made it in summer 2015 leading a team of design interns. Portal is updated a lot after that."), 
@@ -399,7 +399,7 @@ function disp_tabs($isbig=true) {
 
 						array("Shivank Goel", 'Mohit Saini is one of the best guys I have known in the development work. I know him since past two years. His systematic approach towards coding and life in general has no match. He thinks his code not mere a code but an art. He was always a "proper indentation", "no loopholes", "no risks" and "I want end to end perfection" kind of guy.  He is always ready to take up new challenges. Tech-geek , expert , brilliant mind , hard-work and passion are defining words for the person. He is also very experienced and has worked on many real development projects. He also made an automated grade checker from home for the whole institute and could achieve what even the brightest folks couldn\'t here at IIT Delhi. A very practical minded person and hence he hits the nail right on the head and likes to work on projects with real world needs and applications. In short he is a guy whom you can always trust on.', 'Friend', 'https://www.facebook.com/shivankgoelindia'), 
 
-						array("Ira Trivedi", " Mohit if a diligent worker and a talented programmer. He gets the job done in a fast and efficient manner. I recommend him to everyone and anyone who wants a cost effective and well made website.", "Among Top 10 indian writer", "https://www.google.co.in/?client=ubuntu#channel=fs&q=ira+trivedi&gfe_rd=cr"), 
+						array("Ira Trivedi", " Mohit is a diligent worker and a talented programmer. He gets the job done in a fast and efficient manner. I recommend him to everyone and anyone who wants a cost effective and well made website.", "Among Top 10 indian writer", "https://www.google.co.in/?client=ubuntu#channel=fs&q=ira+trivedi&gfe_rd=cr"), 
 
 					);
 					$tabdiv = array(array(0, 1), array(4, 3, 2));
