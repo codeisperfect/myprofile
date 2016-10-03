@@ -358,7 +358,7 @@ function disp_tabs($isbig=true) {
 
 
 
-		<div style='background-color: #fafafa;display: none;' >
+		<div style='background-color: #fafafa;' >
 			<div style='height:100px;' ></div>
 			<div class="menucontainer">
 				<p class="title" style='color:#333' >Personal Jugad</p>
