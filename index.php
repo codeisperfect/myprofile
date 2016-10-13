@@ -130,7 +130,7 @@ function disp_tabs($isbig=true) {
 					<div class='col s12 m12 l4' >
 						<div class='about-subtitle' >My Story</div>
 						<div class='normaltext' >
-		Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. Now I am full time freelancer living in delhi. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
+		Hello, I'm a alumini of IIT Delhi, passed out in may 2016 after completing B.Tech in computer Science department. I was freelanceing since 3 years along with my study. I have developed many big projects for serval startups during my colleage life and the number of small projects, I have worked on are alooot.
 		I have a team of designer and developers who work with me. 
 						</div>
 					</div>
